@@ -1,0 +1,24 @@
+name: ChatCheckers
+main: CoSSeSystem\ChatCheckers
+version: 0.1.1β
+api: [2.0.0]
+load: POSTWORLD
+author: popkechupki
+description: Check Players Chat.
+website: https://github.com/popkechupki/ChatCheckers
+commands:
+ chatchecks:
+  description: ChatCheckers Command
+  permission: ChatCheckers.cmd.main
+permissions:
+ ChatCheckers:
+  default: true
+  description: "Allows using all the ChatCheckers things"
+  children:
+   chestshop.cmd:
+    default: op
+    description: "Allows using all the ChatCheckers commands"
+    children:
+     chestshop.command.main:
+      default: true
+      description: ChatCheckersのメインコマンド"
